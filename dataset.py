@@ -10,10 +10,10 @@ def lr_dataset_generator(slope, n, std_dev):
     
 def lr_dataset():
     x, y = lr_dataset_generator(10, 200, 100)
-    x_train = x[:(0.8*len(x))]
-    y_train = y[:(0.8*len(x))]
+    x_train = x[:int(0.8*len(x))]
+    y_train = y[:int(0.8*len(x))]
 
-    x_test = x[(0.8*len(x)):]
-    y_test = y[(0.8*len(x)):]
+    x_test = x[int(0.8*len(x)):]
+    y_test = y[int(0.8*len(x)):]
     
     return x_train, y_train, x_test, y_test
