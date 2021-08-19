@@ -9,7 +9,7 @@ def lr_dataset_generator(slope, n, std_dev):
     
     
 def lr_dataset():
-    x, y = lr_dataset_generator(10, 200, 100)
+    x, y = lr_dataset_generator(10, 40000, 300)
     x_train = x[:int(0.8*len(x))]
     y_train = y[:int(0.8*len(x))]
 
